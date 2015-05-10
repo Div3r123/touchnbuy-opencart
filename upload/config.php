@@ -1,9 +1,9 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://touchnbuy-opencart/');
+define('HTTP_SERVER', 'http://192.168.1.121/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://touchnbuy-opencart/');
+define('HTTPS_SERVER', 'http://192.168.1.121/');
 
 // DIR
 define('DIR_APPLICATION', '/var/www/paynbuy/opencart/opencart-2.0.2.0/upload/catalog/');

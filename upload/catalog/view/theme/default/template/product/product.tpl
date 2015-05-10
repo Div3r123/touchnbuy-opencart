@@ -32,6 +32,10 @@
             <?php foreach ($images as $image) { ?>
             <li class="image-additional"><a class="thumbnail" href="<?php echo $image['popup']; ?>" title="<?php echo $heading_title; ?>"> <img src="<?php echo $image['thumb']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
             <?php } ?>
+              <?php preg_match('!(.*)/(.*)-!', $image['thumb'], $matches);?>
+              <button class="btn btn-default" onclick="window.location='touchnbuy://openHapticImage/<?php echo $matches[2];?>'" title="" data-toggle="tooltip" type="button" data-original-title="Tap to touch">
+                  <i class="fa fa-hand-o-up icon-big"></i>
+              </button>
             <?php } ?>
           </ul>
           <?php } ?>
